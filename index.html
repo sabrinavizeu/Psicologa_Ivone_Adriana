@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivone Adriana Coelho</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #f6f0ea, #f1e4d8);
+        color: #4a4a4a;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 30px;
+        padding: 0 15px;
+      }
+
+      /* SIDEBAR (NOVA COR) */
+      .sidebar {
+        background: #7f9fa4;
+        border-radius: 30px;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        color: white;
+      }
+
+      /* FOTO */
+      .profile-img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto 20px;
+        border: 6px solid white;
+        box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.3);
+      }
+
+      /* ÍCONE PSI */
+      .psi-symbol {
+        width: 55px;
+        height: 55px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 10px;
+      }
+
+      .psi-symbol img {
+        width: 28px;
+        height: 28px;
+        filter: brightness(0) invert(1);
+      }
+
+      h1 {
+        font-family: "Great Vibes", cursive;
+        font-size: 34px;
+        margin: 10px 0 5px;
+        color: white;
+      }
+
+      .crp {
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        opacity: 0.9;
+        color: white;
+      }
+
+      .section-title {
+        margin-top: 20px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #e6f2ef;
+      }
+
+      .sidebar p {
+        font-size: 13px;
+        line-height: 1.6;
+        color: white;
+      }
+
+      .contact {
+        margin-top: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: white;
+      }
+
+      /* MAIN */
+      .main {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      /* CARD ACADÊMICO */
+      .academic {
+        background: #f8f2ec;
+      }
+
+      .academic-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .academic-header h2 {
+        font-size: 16px;
+        color: #a6785a;
+        letter-spacing: 1px;
+      }
+
+      .academic-icon {
+        width: 45px;
+        height: 45px;
+        border: 2px solid #a6785a;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .academic-icon img {
+        width: 20px;
+        height: 20px;
+      }
+
+      .academic-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .academic-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 13px;
+        color: #7a5a45;
+      }
+
+      .academic-item i {
+        color: #4f6f73;
+        margin-top: 3px;
+      }
+
+      /* CARD */
+      .card {
+        background: white;
+        border-radius: 30px;
+        padding: 25px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h2 {
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: #7f9fa4; /* combinando com sidebar */
+      }
+
+      .card p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .highlight {
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      .whatsapp-btn {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 10px 18px;
+        background: #25d366;
+        color: white;
+        font-size: 13px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      .whatsapp-btn i {
+        margin-right: 6px;
+      }
+
+      .whatsapp-btn:hover {
+        background: #1ebe5d;
+        transform: scale(1.05);
+      }
+
+      /* RESPONSIVO */
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <img src="perfil1.jpeg" alt="Perfil" class="profile-img" />
+
+        <div class="psi-symbol">
+          <img src="psi.svg" alt="Psicologia" />
+        </div>
+
+        <h1>Ivone Adriana O. Coelho</h1>
+        <div class="crp">CRP 05/85644</div>
+
+        <div class="section-title">Sobre mim</div>
+        <p>
+          Sou uma profissional com escuta sensível e olhar atento às
+          necessidades emocionais de cada pessoa. guiada pelo propósito de
+          cuidar do outro com responsabilidade, atuo de forma ética, empática e
+          comprometida, oferecendo um espaço seguro, acolhedor e profissional.
+        </p>
+
+        <div class="section-title">Atendimento Online</div>
+        <a
+          href="https://wa.me/5521981063788?text=Olá,%20gostaria%20de%20agendar%20um%20atendimento!"
+          target="_blank"
+          class="whatsapp-btn"
+        >
+          <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+        </a>
+        <div class="contact">
+          <i class="fab fa-whatsapp"></i> (21) 98106-3788<br />
+          <i class="fab fa-instagram"></i> @i_adrianacoelho_psi
+        </div>
+      </div>
+
+      <!-- MAIN -->
+      <div class="main">
+        <div class="card">
+          <div class="academic-header">
+            <h2>Histórico Acadêmico</h2>
+          </div>
+
+          <div class="academic-list">
+            <div class="academic-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Graduação em Psicologia – IBMR</span>
+            </div>
+
+            <div class="academic-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Formação em Terapia Cognitiva Comportamental CPAF-RJ</span>
+            </div>
+
+            <div class="academic-item">
+              <i class="fas fa-check-circle"></i>
+              <span
+                >Formação em Psicopatologia e Psicofarmacologia – Ser Psicólogo
+                Academy</span
+              >
+            </div>
+
+            <div class="academic-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Curso de Extensão em Psicologia Hospitalar</span>
+            </div>
+
+            <div class="academic-item">
+              <i class="fas fa-check-circle"></i>
+              <span
+                >Curso de Extensão Morte e Luto no Contexto Hospitalar
+                PUC-RJ</span
+              >
+            </div>
+
+            <div class="academic-item">
+              <i class="fas fa-check-circle"></i>
+              <span
+                >Pós-graduando em Teoria Cognitiva Comportamental –
+                INTCC/RJ</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Experiência de trabalho</h2>
+
+          <div class="academic-list">
+            <div class="academic-item">
+              <i class="fas fa-check-circle"></i>
+              <span>
+                Atuação no CDA – Centro para Doença de Alzheimer e outras
+                Desordens Mentais na velhice - atendimento psicológico
+                individual e triagens
+              </span>
+            </div>
+
+            <div class="academic-item">
+              <i class="fas fa-check-circle"></i>
+              <span>
+                Psicóloga hospitalar oferecendo acolhimento e psicoterapia
+                voltados ao paciente e seus familiares, promovendo cuidado
+                emocional integral e suporte ao longo de todo o processo.
+              </span>
+            </div>
+
+            <div class="academic-item">
+              <i class="fas fa-check-circle"></i>
+              <span>
+                Atendimento psicológico online individual e em grupo
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>🧠 Terapia Cognitivo-Comportamental (TCC)</h2>
+          <p>
+            É uma abordagem prática e baseada em evidências, amplamente
+            recomendada para o cuidado com a saúde mental. No processo
+            terapêutico, trabalhamos juntos para compreender como seus
+            pensamentos, emoções e comportamentos se conectam, e como eles podem
+            estar influenciando o seu sofrimento. A partir disso, você aprende
+            estratégias para lidar melhor com situações difíceis, reduzir
+            sintomas de ansiedade, depressão e outras demandas emocionais.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>💬 Como posso te ajudar</h2>
+          <p>
+            O foco não é apenas aliviar o que você sente hoje, mas também te
+            ajudar a desenvolver habilidades que possam ser aplicadas no seu dia
+            a dia, promovendo mais autonomia, equilíbrio emocional e prevenindo
+            recaídas. Se você busca um acompanhamento estruturado, acolhedor, e
+            precisa se compreender melhor e desenvolver novas formas de lidar
+            com seus desafios, estou aqui para caminhar com você nesse processo.
+          </p>
+        </div>
+
+        <div class="highlight">
+          💛 Cuidar da sua saúde emocional é um passo importante
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
