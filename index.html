@@ -11,6 +11,8 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
+  <meta name="format-detection" content="telephone=no">
+
   <style>
     body {
       margin: 0;
@@ -87,10 +89,11 @@
       text-align: center;
       color: white;
       position: relative;
+
       box-shadow: 
-        0 20px 40px rgba(0, 0, 0, 0.15),
-        0 10px 20px rgba(0, 0, 0, 0.08);
-      transform: translateY(0);
+        0 30px 60px rgba(0, 0, 0, 0.25),
+        0 15px 30px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255,255,255,0.2);
       transition: 0.3s ease;
     }
 
@@ -112,6 +115,7 @@
     }
 
     .crp-box {
+      color: white; 
       display: inline-flex;
       align-items: center;
       gap: 6px;
@@ -122,6 +126,11 @@
       font-weight: 600;
       margin-bottom: 10px;
       pointer-events: none;
+    }
+
+    .crp-box span {
+      color: white !important;
+      text-decoration: none !important;
     }
 
     .divider {
