@@ -1,294 +1,218 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ivone Adriana Coelho</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ivone Adriana Coelho</title>
 
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet"/>
 
-    <!-- Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-    <style>
-      body {
-        margin: 0;
-        font-family: "Poppins", sans-serif;
-        background: linear-gradient(135deg, #f6f0ea, #f1e4d8);
-        color: #4a4a4a;
-      }
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #f6f0ea, #f1e4d8);
+      color: #4a4a4a;
+    }
 
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 30px;
+      padding: 0 15px;
+    }
+
+    .sidebar {
+      background: #7f9fa4;
+      border-radius: 30px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      color: white;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 20px;
+      display: block;
+      border: 6px solid white;
+      box-shadow: 0 0 0 6px rgba(255,255,255,0.3);
+    }
+
+    .psi-symbol {
+      width: 55px;
+      height: 55px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 10px;
+    }
+
+    .psi-symbol img {
+      width: 28px;
+      filter: brightness(0) invert(1);
+    }
+
+    h1 {
+      font-family: "Great Vibes", cursive;
+      font-size: 34px;
+      color: white;
+      margin: 10px 0;
+    }
+
+    .section-title {
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #e6f2ef;
+    }
+
+    .sidebar p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: white;
+    }
+
+    .crp-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 4px 10px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .divider {
+      height: 1px;
+      background: rgba(255,255,255,0.3);
+      margin: 20px 0;
+      border: none;
+    }
+
+    .socials {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .social-btn {
+      display: inline-flex; 
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 5px 10px; 
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      color: white;
+      background: rgba(255, 255, 255, 0.15); 
+      transition: 0.3s;
+      width: auto;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 30px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      color: #7f9fa4;
+    }
+
+    .card h2 i {
+      margin-right: 8px;
+      color: #4f6f73;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .academic-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .academic-item {
+      display: flex;
+      gap: 10px;
+      font-size: 13px;
+      color: #7a5a45;
+    }
+
+    .academic-item i {
+      color: #4f6f73;
+      margin-top: 3px;
+    }
+
+    .highlight {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .whatsapp-btn {
+      margin-top: 12px;
+      padding: 10px;
+      background: #25d366;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
       .container {
-        max-width: 1100px;
-        margin: 40px auto;
-        display: grid;
-        grid-template-columns: 320px 1fr;
-        gap: 30px;
-        padding: 0 15px;
+        grid-template-columns: 1fr;
       }
-
-      /* SIDEBAR (NOVA COR) */
-      .sidebar {
-        background: #7f9fa4;
-        border-radius: 30px;
-        padding: 30px 20px;
-        text-align: center;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        color: white;
-      }
-
-      /* FOTO */
-      .profile-img {
-        width: 160px;
-        height: 160px;
-        border-radius: 50%;
-        object-fit: cover;
-        display: block;
-        margin: 0 auto 20px;
-        border: 6px solid white;
-        box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.3);
-      }
-
-      /* ÍCONE PSI */
-      .psi-symbol {
-        width: 55px;
-        height: 55px;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 10px;
-      }
-
-      .psi-symbol img {
-        width: 28px;
-        height: 28px;
-        filter: brightness(0) invert(1);
-      }
-
-      h1 {
-        font-family: "Great Vibes", cursive;
-        font-size: 34px;
-        margin: 10px 0 5px;
-        color: white;
-      }
-
-      .crp {
-        font-size: 13px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        opacity: 0.9;
-        color: white;
-      }
-
-      .section-title {
-        margin-top: 20px;
-        font-size: 15px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        color: #e6f2ef;
-      }
-
-      .sidebar p {
-        font-size: 15px;
-        line-height: 1.6;
-        color: white;
-      }
-
-      /* MAIN */
-      .main {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-      }
-
-      /* CARD ACADÊMICO */
-      .academic {
-        background: #f8f2ec;
-      }
-
-      .academic-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-
-      .academic-header h2 {
-        font-size: 16px;
-        color: #a6785a;
-        letter-spacing: 1px;
-      }
-
-      .academic-icon {
-        width: 45px;
-        height: 45px;
-        border: 2px solid #a6785a;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .academic-icon img {
-        width: 20px;
-        height: 20px;
-      }
-
-      .academic-list {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-      }
-
-      .academic-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 10px;
-        font-size: 13px;
-        color: #7a5a45;
-      }
-
-      .academic-item i {
-        color: #4f6f73;
-        margin-top: 3px;
-      }
-
-      /* CARD */
-      .card {
-        background: white;
-        border-radius: 30px;
-        padding: 25px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        transition: 0.3s;
-      }
-
-      .card:hover {
-        transform: translateY(-5px);
-      }
-
-      .card h2 {
-        font-size: 20px;
-        margin-bottom: 15px;
-        color: #7f9fa4; /* combinando com sidebar */
-      }
-
-      .card p {
-        font-size: 15px;
-        line-height: 1.6;
-      }
-
-      .highlight {
-        text-align: center;
-        font-weight: 500;
-        font-size: 20px;
-        margin-top: 10px;
-      }
-
-      .whatsapp-btn {
-        display: inline-block;
-        margin-top: 12px;
-        padding: 10px 18px;
-        background: #25d366;
-        color: white;
-        font-size: 15px;
-        border-radius: 20px;
-        text-decoration: none;
-        font-weight: 500;
-        transition: 0.3s;
-      }
-
-      .whatsapp-btn i {
-        margin-right: 6px;
-      }
-
-      .whatsapp-btn:hover {
-        background: #1ebe5d;
-        transform: scale(1.05);
-      }
-
-      /* CAIXA DO CRP */
-      .crp-box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        background: rgba(255, 255, 255, 0.15);
-        padding: 8px 12px;
-        border-radius: 12px;
-        font-size: 13px;
-        font-weight: 600;
-        margin-bottom: 15px;
-      }
-
-      .crp-box i {
-        font-size: 14px;
-      }
-
-      /* LINHA DIVISÓRIA */
-      .divider {
-        border: none;
-        height: 1px;
-        background: rgba(255, 255, 255, 0.3);
-        margin: 20px 0;
-      }
-
-      /* REDES SOCIAIS */
-      .socials {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      /* BOTÕES */
-      .social-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6px;
-        padding: 8px;
-        border-radius: 12px;
-        text-decoration: none;
-        font-size: 15px;
-        font-weight: 500;
-        color: white;
-        transition: 0.3s;
-      }
-
-      /* WHATSAPP */
-      .social-btn.whatsapp {
-        background: #25d366;
-      }
-
-      .social-btn.whatsapp:hover {
-        background: #1ebe5d;
-      }
-
-      /* INSTAGRAM */
-      .social-btn.instagram {
-        background: #e1306c;
-      }
-
-      .social-btn.instagram:hover {
-        background: #c72b5c;
-      }
-
-      /* RESPONSIVO */
-      @media (max-width: 768px) {
-        .container {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-  </head>
+    }
+  </style>
+</head>
 
   <body>
     <div class="container">
@@ -350,7 +274,7 @@
 
       <!-- MAIN -->
       <div class="main">
-        <div class="card">
+        <div class="card reveal">
           <div class="academic-header">
             <h2><i class="fas fa-graduation-cap"></i> Histórico Acadêmico</h2>
           </div>
@@ -397,7 +321,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card reveal">
           <h2><i class="fas fa-briefcase"></i> Experiência de trabalho</h2>
 
           <div class="academic-list">
@@ -428,7 +352,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card reveal">
           <h2><i class="fas fa-brain"></i> Terapia Cognitivo-Comportamental (TCC)</h2>
           <p>
             É uma abordagem prática e baseada em evidências, amplamente
@@ -443,7 +367,7 @@
           </p>
         </div>
 
-        <div class="card">
+        <div class="card reveal">
           <h2><i class="fas fa-comment-dots"></i> Como posso te ajudar</h2>
           <p>
             O foco não é apenas aliviar o que você sente hoje, mas também te
@@ -464,5 +388,19 @@
         </div>
       </div>
     </div>
+
+    <script>
+function revealOnScroll() {
+  document.querySelectorAll(".reveal").forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+</script>
+
   </body>
 </html>
