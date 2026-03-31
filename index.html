@@ -91,22 +91,15 @@
 
       .section-title {
         margin-top: 20px;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 600;
         letter-spacing: 1px;
         color: #e6f2ef;
       }
 
       .sidebar p {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 1.6;
-        color: white;
-      }
-
-      .contact {
-        margin-top: 10px;
-        font-size: 13px;
-        font-weight: 600;
         color: white;
       }
 
@@ -183,20 +176,20 @@
       }
 
       .card h2 {
-        font-size: 16px;
+        font-size: 20px;
         margin-bottom: 15px;
         color: #7f9fa4; /* combinando com sidebar */
       }
 
       .card p {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.6;
       }
 
       .highlight {
         text-align: center;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 20px;
         margin-top: 10px;
       }
 
@@ -206,7 +199,7 @@
         padding: 10px 18px;
         background: #25d366;
         color: white;
-        font-size: 13px;
+        font-size: 15px;
         border-radius: 20px;
         text-decoration: none;
         font-weight: 500;
@@ -220,6 +213,72 @@
       .whatsapp-btn:hover {
         background: #1ebe5d;
         transform: scale(1.05);
+      }
+
+      /* CAIXA DO CRP */
+      .crp-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.15);
+        padding: 8px 12px;
+        border-radius: 12px;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .crp-box i {
+        font-size: 14px;
+      }
+
+      /* LINHA DIVISÓRIA */
+      .divider {
+        border: none;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.3);
+        margin: 20px 0;
+      }
+
+      /* REDES SOCIAIS */
+      .socials {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      /* BOTÕES */
+      .social-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 8px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+        transition: 0.3s;
+      }
+
+      /* WHATSAPP */
+      .social-btn.whatsapp {
+        background: #25d366;
+      }
+
+      .social-btn.whatsapp:hover {
+        background: #1ebe5d;
+      }
+
+      /* INSTAGRAM */
+      .social-btn.instagram {
+        background: #e1306c;
+      }
+
+      .social-btn.instagram:hover {
+        background: #c72b5c;
       }
 
       /* RESPONSIVO */
@@ -242,8 +301,34 @@
         </div>
 
         <h1>Ivone Adriana O. Coelho</h1>
-        <div class="crp">CRP 05/85644</div>
+        <div class="crp-box">
+          <i class="fas fa-id-card"></i>
+          <span>CRP 05/85644</span>
+        </div>
 
+        <hr class="divider" />
+
+        <div class="section-title">Redes sociais</div>
+
+        <div class="socials">
+          <a
+            href="https://wa.me/5521981063788"
+            target="_blank"
+            class="social-btn whatsapp"
+          >
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+
+          <a
+            href="https://instagram.com/i_adrianacoelho_psi"
+            target="_blank"
+            class="social-btn instagram"
+          >
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+
+        <hr class="divider" />
         <div class="section-title">Sobre mim</div>
         <p>
           Sou uma profissional com escuta sensível e olhar atento às
@@ -251,6 +336,7 @@
           cuidar do outro com responsabilidade, atuo de forma ética, empática e
           comprometida, oferecendo um espaço seguro, acolhedor e profissional.
         </p>
+        <hr class="divider" />
 
         <div class="section-title">Atendimento Online</div>
         <a
@@ -260,17 +346,13 @@
         >
           <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
         </a>
-        <div class="contact">
-          <i class="fab fa-whatsapp"></i> (21) 98106-3788<br />
-          <i class="fab fa-instagram"></i> @i_adrianacoelho_psi
-        </div>
       </div>
 
       <!-- MAIN -->
       <div class="main">
         <div class="card">
           <div class="academic-header">
-            <h2>Histórico Acadêmico</h2>
+            <h2><i class="fas fa-graduation-cap"></i> Histórico Acadêmico</h2>
           </div>
 
           <div class="academic-list">
@@ -316,7 +398,7 @@
         </div>
 
         <div class="card">
-          <h2>Experiência de trabalho</h2>
+          <h2><i class="fas fa-briefcase"></i> Experiência de trabalho</h2>
 
           <div class="academic-list">
             <div class="academic-item">
@@ -347,32 +429,38 @@
         </div>
 
         <div class="card">
-          <h2>🧠 Terapia Cognitivo-Comportamental (TCC)</h2>
+          <h2><i class="fas fa-brain"></i> Terapia Cognitivo-Comportamental (TCC)</h2>
           <p>
             É uma abordagem prática e baseada em evidências, amplamente
-            recomendada para o cuidado com a saúde mental. No processo
-            terapêutico, trabalhamos juntos para compreender como seus
+            recomendada para o cuidado com a saúde mental. 
+          <p>
+            No processo terapêutico, trabalhamos juntos para compreender como seus
             pensamentos, emoções e comportamentos se conectam, e como eles podem
             estar influenciando o seu sofrimento. A partir disso, você aprende
             estratégias para lidar melhor com situações difíceis, reduzir
-            sintomas de ansiedade, depressão e outras demandas emocionais.
+            sintomas de ansiedade, depressão e outras demandas emocionais.  
+          </p>
           </p>
         </div>
 
         <div class="card">
-          <h2>💬 Como posso te ajudar</h2>
+          <h2><i class="fas fa-comment-dots"></i> Como posso te ajudar</h2>
           <p>
             O foco não é apenas aliviar o que você sente hoje, mas também te
             ajudar a desenvolver habilidades que possam ser aplicadas no seu dia
             a dia, promovendo mais autonomia, equilíbrio emocional e prevenindo
-            recaídas. Se você busca um acompanhamento estruturado, acolhedor, e
+            recaídas. 
+          <p>
+            Se você busca um acompanhamento estruturado, acolhedor, e
             precisa se compreender melhor e desenvolver novas formas de lidar
             com seus desafios, estou aqui para caminhar com você nesse processo.
+          </p>
           </p>
         </div>
 
         <div class="highlight">
-          💛 Cuidar da sua saúde emocional é um passo importante
+          <i class="fas fa-heart"></i>
+          Cuidar da sua saúde emocional é um passo importante!
         </div>
       </div>
     </div>
