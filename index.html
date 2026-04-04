@@ -261,6 +261,69 @@
       transform: translateY(0);
     }
 
+    .footer {
+    margin-top: 40px;
+    background: #7f9fa4;
+    color: white;
+    padding: 50px 20px 25px;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+    box-shadow:
+      0 -10px 30px rgba(0,0,0,0.15),
+      inset 0 1px 0 rgba(255,255,255,0.15);
+  }
+
+  .footer-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .footer-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .footer-text {
+    font-size: 15px;
+    opacity: 0.9;
+    margin-bottom: 20px;
+  }
+
+  .footer-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #25d366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 25px;
+    transition: 0.3s;
+  }
+
+  .footer-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+
+  .footer-info {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-bottom: 25px;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 15px;
+    font-size: 13px;
+    opacity: 0.8;
+  }
+
     @media (max-width: 768px) {
       .container {
         grid-template-columns: 1fr;
@@ -337,32 +400,32 @@
           <div class="academic-list">
             <div class="academic-item">
               <i class="fas fa-check-circle"></i>
-              <span>Graduação em Psicologia – IBMR</span>
+              <span>Graduação em Psicologia – IBMR.</span>
             </div>
 
             <div class="academic-item">
               <i class="fas fa-check-circle"></i>
-              <span>Formação em Terapia Cognitiva Comportamental CPAF-RJ</span>
+              <span>Formação em Terapia Cognitiva Comportamental CPAF-RJ.</span>
             </div>
 
             <div class="academic-item">
               <i class="fas fa-check-circle"></i>
               <span
                 >Formação em Psicopatologia e Psicofarmacologia – Ser Psicólogo
-                Academy</span
+                Academy.</span
               >
             </div>
 
             <div class="academic-item">
               <i class="fas fa-check-circle"></i>
-              <span>Curso de Extensão em Psicologia Hospitalar</span>
+              <span>Curso de Extensão em Psicologia Hospitalar.</span>
             </div>
 
             <div class="academic-item">
               <i class="fas fa-check-circle"></i>
               <span
                 >Curso de Extensão Morte e Luto no Contexto Hospitalar
-                PUC-RJ</span
+                PUC-RJ.</span
               >
             </div>
 
@@ -370,7 +433,7 @@
               <i class="fas fa-check-circle"></i>
               <span
                 >Pós-graduando em Teoria Cognitiva Comportamental –
-                INTCC/RJ</span
+                INTCC/RJ.</span
               >
             </div>
           </div>
@@ -385,7 +448,7 @@
               <span>
                 Atuação no CDA – Centro para Doença de Alzheimer e outras
                 Desordens Mentais na velhice - atendimento psicológico
-                individual e triagens
+                individual e triagens.
               </span>
             </div>
 
@@ -401,7 +464,7 @@
             <div class="academic-item">
               <i class="fas fa-check-circle"></i>
               <span>
-                Atendimento psicológico online individual e em grupo
+                Atendimento psicológico online individual e em grupo.
               </span>
             </div>
           </div>
@@ -436,26 +499,51 @@
           </p>
           </p>
         </div>
-
-        <div class="highlight">
-          <img src="psi.svg" class="highlight-icon" alt="Psi" />
-          Cuidar da sua saúde emocional é um passo importante.
-        </div>
       </div>
     </div>
 
     <script>
-function revealOnScroll() {
-  document.querySelectorAll(".reveal").forEach(el => {
-    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
-      el.classList.add("active");
-    }
-  });
-}
+      function revealOnScroll() {
+        document.querySelectorAll(".reveal").forEach(el => {
+          if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+            el.classList.add("active");
+          }
+        });
+      }
 
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
-</script>
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll);
+    </script>
+    <footer class="footer">
+  <div class="footer-content">
 
+    <h2 class="footer-title">Dê o primeiro passo hoje</h2>
+
+    <p class="footer-text">
+      Cuidar da sua saúde emocional é um passo importante.
+    </p>
+
+    <a
+      href="https://wa.me/5521981063788?text=Olá,%20gostaria%20de%20agendar%20um%20atendimento!"
+      target="_blank"
+      class="footer-btn"
+    >
+      <i class="fab fa-whatsapp"></i> Entrar em contato
+    </a>
+
+    <div class="footer-info">
+      <p><strong>Horários de atendimento</strong></p>
+      <p>Segunda a sexta, das 09h às 18h</p>
+      <p>Atendimento Online</p>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Ivone Adriana de Oliveira Coelho • Psicóloga • TCC</p>
+      <p>© 2026 Todos os direitos reservados</p>
+    </div>
+
+  </div>
+</footer>
   </body>
 </html>
+,,
